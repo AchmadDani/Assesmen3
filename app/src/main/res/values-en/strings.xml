@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Assesmen 2</string>
+    <string name="intro">Please choose your plant type and planting date sir</string>
+    <string name="input_invalid">Can\'t be empty</string>
+    <string name="jagung">Corn</string>
+    <string name="cabai">Chillies</string>
+    <string name="pick_date">Planted Date</string>
+    <string name="cek">When harvest?</string>
+    <string name="cancel">Cancel</string>
+    <string name="pilih_tanggal">Choose date</string>
+    <string name="pilih">Choose</string>
+    <string name="tanggal_dipilih">Date Selected</string>
+    <string name="kembali">Back</string>
+    <string name="cek_tanggal_panen">Check Estimated Harvest</string>
+    <string name="tentang_aplikasi">About Application</string>
+    <string name="bagikan">Share</string>
+    <string name="bagikan_template">Tanaman %1$s saya telah di tanaman sejak %2$s dan %3$s</string>
+    <string name="bagikan_hasil">Hai saya %1$s, saya baru saja mencoba aplikasi "Sahabat Tani" untuk menghitung perkiraan panen tanaman %2$s saya. Ayo Coba sekarang!</string>
+    <string name="tanggal_panen">Your plant is expected to be harvested on: %1$s</string>
+    <string name="belum_bisa">Features Under Development</string>
+    <string name="nama">Input name</string>
+    <string name="versi">Version: 1.0.0</string>
+    <string name="about_text">Sahabat Tani is a mobile application designed to support farmers with features such as estimating harvest time, identifying crop diseases, and providing farming tips.</string>
+    <string name="asesmen1">Asessmen 1</string>
+    <string name="list_kosong">No plant data yet</string>
+    <string name="x_diklik">%1$s clicked!</string>
+    <string name="tambah_tanaman">Add plant</string>
+    <string name="isi_tanggal">Date</string>
+    <string name="simpan">Save</string>
+    <string name="edit_tanaman">Edit plant</string>
+    <string name="invalid">Name, date, and notes cannot be empty.</string>
+    <string name="lainnya">Other options</string>
+    <string name="hapus">Delete plant data</string>
+    <string name="pesan_hapus">Delete this plant data?</string>
+    <string name="tombol_hapus">Delete</string>
+    <string name="tombol_batal">Cancel</string>
+    <string name="list">List view</string>
+    <string name="grid">Grid view</string>
+
+</resources>

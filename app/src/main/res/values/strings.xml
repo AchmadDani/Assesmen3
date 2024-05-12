@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Assesmen 2</string>
+    <string name="list_kosong">Belum ada data Tanaman</string>
+    <string name="x_diklik">%1$s diklik!</string>
+    <string name="tambah_tanaman">Tambah tanaman</string>
+    <string name="nama">Nama Tanaman</string>
+    <string name="isi_tanggal">Tanggal</string>
+    <string name="kembali">Kembali</string>
+    <string name="simpan">Simpan</string>
+    <string name="edit_tanaman">Ubah Tanaman</string>
+    <string name="invalid">Nama, tanggal, dan catatan tidak boleh kosong.</string>
+    <string name="lainnya">Opsi lainnya</string>
+    <string name="hapus">Hapus data Tanaman</string>
+    <string name="pesan_hapus">Hapus data tanaman ini?</string>
+    <string name="tombol_hapus">Hapus</string>
+    <string name="tombol_batal">Batal</string>
+    <string name="list">Tampilan list</string>
+    <string name="grid">Tampilan grid</string>
+    <string name="pick_date">Pilih tanggal</string>
+    <string name="tanggal_dipilih">Tanggal Dipilih</string>
+    <string name="pilih">Pilih</string>
+    <string name="cancel">Batal</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="catatan" translatable="false">Catatan</string>
+    <string name="intro" translatable="false">Silahkan pilih jenis tanaman anda dan tanggal menanamnya pakde</string>
+    <string name="input_invalid">Tidak boleh kosong.</string>
+    <string name="jagung">Jagung</string>
+    <string name="cabai">Cabai</string>
+    <string name="cek_tanggal_panen">Cek Perkiraan Panen</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="tanggal_panen">Tanaman anda diperkirakan panen pada: %1$s</string>
+    <string name="bagikan_template">Tanaman %1$s saya telah di tanaman sejak %2$s dan %3$s</string>
+    <string name="bagikan_hasil">Hai saya %1$s, saya baru saja mencoba aplikasi "Sahabat Tani" untuk menghitung perkiraan panen tanaman %2$s saya. Ayo Coba sekarang!</string>
+    <string name="belum_bisa">Fitur Masih Dalam Pengembangan</string>
+    <string name="daftar_tanaman" translatable="false">Daftar Tanaman</string>
+    <string name="versi">Versi: 1.0.0</string>
+    <string name="about_text">Sahabat Tani adalah aplikasi mobile yang dirancang untuk membantu petani dengan fitur memperkirakan waktu panen, mengidentifikasi penyakit tanaman, dan memberikan tips pertanian</string>
+    <string name="cek">Cekk</string>
+    <string name="asesmen1">Asessmen 1</string>
+</resources>
