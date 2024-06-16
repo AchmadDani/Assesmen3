@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assesmen 2</string>
+    <string name="app_name">Assesmen 3</string>
+    <string name="ass2">Assesmen 2</string>
     <string name="intro">Please choose your plant type and planting date sir</string>
     <string name="input_invalid">Can\'t be empty</string>
     <string name="jagung">Corn</string>
@@ -15,8 +16,8 @@
     <string name="cek_tanggal_panen">Check Estimated Harvest</string>
     <string name="tentang_aplikasi">About Application</string>
     <string name="bagikan">Share</string>
-    <string name="bagikan_template">Tanaman %1$s saya telah di tanaman sejak %2$s dan %3$s</string>
-    <string name="bagikan_hasil">Hai saya %1$s, saya baru saja mencoba aplikasi "Sahabat Tani" untuk menghitung perkiraan panen tanaman %2$s saya. Ayo Coba sekarang!</string>
+    <string name="bagikan_template">Tanaman %1$s saya telah di plants sejak %2$s dan %3$s</string>
+    <string name="bagikan_hasil">Hai saya %1$s, saya baru saja mencoba aplikasi "Sahabat Tani" untuk menghitung perkiraan panen plants %2$s saya. Ayo Coba sekarang!</string>
     <string name="tanggal_panen">Your plant is expected to be harvested on: %1$s</string>
     <string name="belum_bisa">Features Under Development</string>
     <string name="nama">Input name</string>

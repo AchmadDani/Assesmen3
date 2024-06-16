@@ -4,9 +4,9 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import org.d3if3131.assesmen2.model.Tanaman
+import org.d3if3131.assesmen2.model.Plants
 
-@Database(entities = [Tanaman::class], version = 1, exportSchema = false)
+@Database(entities = [Plants::class], version = 1, exportSchema = false)
 abstract class TanamanDb : RoomDatabase() {
 
     abstract val dao:TanamanDao

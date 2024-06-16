@@ -15,7 +15,6 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.MoreVert
-import androidx.compose.material.icons.outlined.Check
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.DropdownMenu
@@ -50,7 +49,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import org.d3if3131.assesmen2.R
 import org.d3if3131.assesmen2.database.TanamanDb
-import org.d3if3131.assesmen2.model.Tanaman
+import org.d3if3131.assesmen2.model.Plants
 import org.d3if3131.assesmen2.ui.theme.Assesmen2Theme
 import org.d3if3131.assesmen2.util.ViewModelFactory
 import java.time.LocalDate
@@ -77,11 +76,11 @@ fun DetailScreen(navController: NavHostController, id: Long? = null) {
 
     LaunchedEffect(true) {
         if (id == null) return@LaunchedEffect
-        val tanaman: Tanaman = viewModel.getTanaman(id) ?: return@LaunchedEffect
-        nama = tanaman.nama
-        tanggal = tanaman.tanggal
-        catatan = tanaman.catatan
-        kondisi = tanaman.kondisi
+        val plants: Plants = viewModel.getTanaman(id) ?: return@LaunchedEffect
+        nama = plants.nama
+        tanggal = plants.tanggal
+        catatan = plants.catatan
+        kondisi = plants.kondisi
     }
 
     Scaffold(

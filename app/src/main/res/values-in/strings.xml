@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assesmen 2</string>
-    <string name="intro">Silahkan pilih jenis tanaman anda dan tanggal menanamnya pakde</string>
+    <string name="app_name">Assesmen 3</string>
+    <string name="ass2">Assesmen 2</string>
+    <string name="intro">Silahkan pilih jenis plants anda dan tanggal menanamnya pakde</string>
     <string name="input_invalid">Tidak boleh kosong</string>
     <string name="jagung">Jagung</string>
     <string name="cabai">Cabai</string>
@@ -15,23 +16,23 @@
     <string name="cek_tanggal_panen">Cek Perkiraan Panen</string>
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
     <string name="bagikan">Bagikan</string>
-    <string name="bagikan_template">Tanaman %1$s saya telah di tanaman sejak %2$s dan %3$s</string>
-    <string name="bagikan_hasil">Hai saya %1$s, saya baru saja mencoba aplikasi "Sahabat Tani" untuk menghitung perkiraan panen tanaman %2$s saya. Ayo Coba sekarang!</string>
+    <string name="bagikan_template">Tanaman %1$s saya telah di plants sejak %2$s dan %3$s</string>
+    <string name="bagikan_hasil">Hai saya %1$s, saya baru saja mencoba aplikasi "Sahabat Tani" untuk menghitung perkiraan panen plants %2$s saya. Ayo Coba sekarang!</string>
     <string name="tanggal_panen">Tanaman anda diperkirakan panen pada: %1$s</string>
     <string name="belum_bisa">Fitur Masih Dalam Pengembangan</string>
     <string name="nama">Masukan nama</string>
     <string name="versi">Versi: 1.0.0</string>
-    <string name="about_text">Sahabat Tani adalah aplikasi mobile yang dirancang untuk membantu petani dengan fitur memperkirakan waktu panen, mengidentifikasi penyakit tanaman, dan memberikan tips pertanian</string>
+    <string name="about_text">Sahabat Tani adalah aplikasi mobile yang dirancang untuk membantu petani dengan fitur memperkirakan waktu panen, mengidentifikasi penyakit plants, dan memberikan tips pertanian</string>
     <string name="list_kosong">Belum ada data Tanaman</string>
     <string name="x_diklik">%1$s diklik!</string>
-    <string name="tambah_tanaman">Tambah tanaman</string>
+    <string name="tambah_tanaman">Tambah plants</string>
     <string name="isi_tanggal">Tanggal</string>
     <string name="simpan">Simpan</string>
     <string name="edit_tanaman">Ubah Tanaman</string>
     <string name="invalid">Nama, tanggal, dan catatan tidak boleh kosong.</string>
     <string name="lainnya">Opsi lainnya</string>
     <string name="hapus">Hapus data Tanaman</string>
-    <string name="pesan_hapus">Hapus data tanaman ini?</string>
+    <string name="pesan_hapus">Hapus data plants ini?</string>
     <string name="tombol_hapus">Hapus</string>
     <string name="tombol_batal">Batal</string>
     <string name="list">Tampilan list</string>

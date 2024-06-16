@@ -5,28 +5,28 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.d3if3131.assesmen2.database.TanamanDao
-import org.d3if3131.assesmen2.model.Tanaman
+import org.d3if3131.assesmen2.model.Plants
 
 class DetailViewModel(private val dao: TanamanDao) : ViewModel() {
 
     fun insert(nama: String, tanggal: String, catatan: String, kondisi: String) {
-        val tanaman = Tanaman(
+        val plants = Plants(
             nama = nama,
             tanggal = tanggal,
             catatan = catatan,
             kondisi = kondisi
         )
         viewModelScope.launch(Dispatchers.IO) {
-            dao.insert(tanaman)
+            dao.insert(plants)
         }
     }
 
-    suspend fun getTanaman(id: Long): Tanaman? {
+    suspend fun getTanaman(id: Long): Plants? {
         return dao.getTanamanById(id)
     }
 
     fun update(id: Long, nama: String, tanggal: String, catatan: String, kondisi: String) {
-        val tanaman = Tanaman(
+        val plants = Plants(
             id = id,
             nama = nama,
             tanggal = tanggal,
@@ -35,7 +35,7 @@ class DetailViewModel(private val dao: TanamanDao) : ViewModel() {
         )
 
         viewModelScope.launch(Dispatchers.IO) {
-            dao.update(tanaman)
+            dao.update(plants)
         }
     }
 

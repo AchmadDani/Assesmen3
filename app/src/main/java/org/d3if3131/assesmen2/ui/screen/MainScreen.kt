@@ -58,17 +58,9 @@ import org.d3if3131.assesmen2.util.ViewModelFactory
 import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.DateRange
-import androidx.compose.material.icons.filled.MoreVert
 import androidx.compose.material.icons.filled.Share
-import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
-import androidx.compose.material3.DropdownMenu
-import androidx.compose.material3.DropdownMenuItem
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.colorResource
-import org.d3if3131.assesmen2.model.Tanaman
+import org.d3if3131.assesmen2.model.Plants
 import org.d3if3131.assesmen2.ui.theme.Assesmen2Theme
 import org.d3if3131.assesmen2.util.SettingsDataStore
 
@@ -82,12 +74,21 @@ fun MainScreen(navController: NavHostController) {
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = stringResource(id = R.string.app_name))
+                    Text(text = stringResource(id = R.string.ass2))
                 },
                 colors = TopAppBarDefaults.mediumTopAppBarColors(
                     containerColor = colorResource(id = R.color.primer),
                     titleContentColor = colorResource(id = R.color.white),
                     ),
+                navigationIcon = {
+                    IconButton(onClick = { navController.popBackStack() }) {
+                        Icon(
+                            imageVector = Icons.Filled.ArrowBack,
+                            contentDescription = stringResource(R.string.kembali),
+                            tint = colorResource(id = R.color.white)
+                        )
+                    }
+                },
                 actions = {
                     IconButton(
                         onClick = {
@@ -169,7 +170,7 @@ fun CekContent(showList: Boolean, modifier: Modifier, navController: NavHostCont
                 contentPadding = PaddingValues(bottom = 84.dp)
             ) {
                 items(data) {
-                    ListItem(tanaman = it) {
+                    ListItem(plants = it) {
                         navController.navigate(Screen.FormUbah.withId(it.id))
                     }
                     Divider()
@@ -185,7 +186,7 @@ fun CekContent(showList: Boolean, modifier: Modifier, navController: NavHostCont
                 contentPadding = PaddingValues(8.dp, 8.dp, 8.dp, 84.dp)
             ) {
                 this.items(data) {
-                    GridItem(tanaman = it) {
+                    GridItem(plants = it) {
                         navController.navigate(Screen.FormUbah.withId(it.id))
                     }
                 }
@@ -195,7 +196,7 @@ fun CekContent(showList: Boolean, modifier: Modifier, navController: NavHostCont
 }
 
 @Composable
-fun ListItem(tanaman: Tanaman, onClick: () -> Unit) {
+fun ListItem(plants: Plants, onClick: () -> Unit) {
     val context = LocalContext.current
     Column (
         modifier = Modifier
@@ -205,13 +206,13 @@ fun ListItem(tanaman: Tanaman, onClick: () -> Unit) {
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         Text(
-            text = tanaman.nama,
+            text = plants.nama,
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
             fontWeight = FontWeight.Bold
         )
         Text(
-            text = tanaman.tanggal,
+            text = plants.tanggal,
             maxLines = 2,
             overflow = TextOverflow.Ellipsis
         )
@@ -219,13 +220,13 @@ fun ListItem(tanaman: Tanaman, onClick: () -> Unit) {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween
         ){
-            Text(text = tanaman.kondisi)
+            Text(text = plants.kondisi)
             IconButton(
                 onClick = {
                     shareData(
                         context = context,
                         message = context.getString(R.string.bagikan_template,
-                            tanaman.nama, tanaman.tanggal, tanaman.kondisi))
+                            plants.nama, plants.tanggal, plants.kondisi))
                 },
             ) {
                 Icon(
@@ -239,7 +240,7 @@ fun ListItem(tanaman: Tanaman, onClick: () -> Unit) {
 }
 
 @Composable
-fun GridItem(tanaman: Tanaman, onClick: () -> Unit) {
+fun GridItem(plants: Plants, onClick: () -> Unit) {
     val context = LocalContext.current
     Card(
         modifier = Modifier
@@ -255,24 +256,24 @@ fun GridItem(tanaman: Tanaman, onClick: () -> Unit) {
             verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             Text(
-                text = tanaman.nama,
+                text = plants.nama,
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
                 fontWeight = FontWeight.Bold
             )
             Text(
-                text = tanaman.tanggal,
+                text = plants.tanggal,
                 maxLines = 4,
                 overflow = TextOverflow.Ellipsis
             )
             Row {
-                Text(text = tanaman.kondisi)
+                Text(text = plants.kondisi)
                 IconButton(
                     onClick = {
                         shareData(
                             context = context,
                             message = context.getString(R.string.bagikan_template,
-                                tanaman.nama, tanaman.tanggal, tanaman.kondisi))
+                                plants.nama, plants.tanggal, plants.kondisi))
                     },
                 ) {
                     Icon(
